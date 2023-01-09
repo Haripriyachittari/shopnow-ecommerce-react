@@ -13,11 +13,12 @@ const Cart = () => {
       <div>
         <h1 className='text-center font-bold text-4xl underline m-6'>Items in the Cart</h1>
         <div className='p-6'>
-          {PRODUCTS.map((product)=>{
-              if(cartItems[product.id]!==0){
+          {PRODUCTS.map((product)=> {
+             if(cartItems[product.id]!==0){
                    return <CartItem data={product}/>
               }
-          })}
+           
+            })}
         </div>
         {totalamount > 0 ? 
         <div className='text-center'>
